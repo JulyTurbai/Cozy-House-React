@@ -40,18 +40,7 @@ jobs:
             export NVM_DIR=~/.nvm
             source ~/.nvm/nvm.sh
             cd ${{ secrets[steps.vars.outputs.PATH_PROJECT] }}
-            yarn install
-      - name: Yarn Build
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets[steps.vars.outputs.SSH_HOST] }}
-          password: ${{ secrets[steps.vars.outputs.SSH_PASSWORD] }}
-          username: ${{ secrets[steps.vars.outputs.SSH_USERNAME] }}
-          script: |
-            export NVM_DIR=~/.nvm
-            source ~/.nvm/nvm.sh
-            cd ${{ secrets[steps.vars.outputs.PATH_PROJECT] }}
-            yarn build
+            npm install
       - name: Restart Front
         uses: appleboy/ssh-action@master
         with:
