@@ -28,7 +28,6 @@ jobs:
           username: ${{ secrets[steps.vars.outputs.SSH_USERNAME] }}
           script: |
             cd ${{ secrets[steps.vars.outputs.PATH_PROJECT] }}
-            git reset --hard
             git pull
       - name: Yarn Install
         uses: appleboy/ssh-action@master
