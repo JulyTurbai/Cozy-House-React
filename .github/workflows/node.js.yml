@@ -1,0 +1,65 @@
+name: Deploy Node
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create variables
+        id: vars 
+        run: |
+          BRANCH=$(echo ${GITHUB_REF##*/} | tr a-z A-Z)
+          echo "::set-output name=PATH_PROJECT::PATH_PROJECT_$BRANCH"
+          echo "::set-output name=SSH_HOST::SSH_HOST_$BRANCH"
+          echo "::set-output name=SSH_PASSWORD::SSH_PASSWORD_$BRANCH"
+          echo "::set-output name=SSH_USERNAME::SSH_USERNAME_$BRANCH"
+          echo "::set-output name=PM2_APP::PM2_APP_$BRANCH"
+          echo "::set-output name=BRANCH::$BRANCH"
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Deployment
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets[steps.vars.outputs.SSH_HOST] }}
+          password: ${{ secrets[steps.vars.outputs.SSH_PASSWORD] }}
+          username: ${{ secrets[steps.vars.outputs.SSH_USERNAME] }}
+          script: |
+            cd ${{ secrets[steps.vars.outputs.PATH_PROJECT] }}
+            git reset --hard
+            git pull
+      - name: Yarn Install
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets[steps.vars.outputs.SSH_HOST] }}
+          password: ${{ secrets[steps.vars.outputs.SSH_PASSWORD] }}
+          username: ${{ secrets[steps.vars.outputs.SSH_USERNAME] }}
+          script: |
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
+            cd ${{ secrets[steps.vars.outputs.PATH_PROJECT] }}
+            yarn install
+      - name: Yarn Build
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets[steps.vars.outputs.SSH_HOST] }}
+          password: ${{ secrets[steps.vars.outputs.SSH_PASSWORD] }}
+          username: ${{ secrets[steps.vars.outputs.SSH_USERNAME] }}
+          script: |
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
+            cd ${{ secrets[steps.vars.outputs.PATH_PROJECT] }}
+            yarn build
+      - name: Restart Front
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets[steps.vars.outputs.SSH_HOST] }}
+          password: ${{ secrets[steps.vars.outputs.SSH_PASSWORD] }}
+          username: ${{ secrets[steps.vars.outputs.SSH_USERNAME] }}
+          script: |
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
+            cd ${{ secrets[steps.vars.outputs.PATH_PROJECT] }}
+            pm2 reload ${{ secrets[steps.vars.outputs.PM2_APP] }}
