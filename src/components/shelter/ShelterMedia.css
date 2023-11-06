@@ -1,0 +1,22 @@
+@media (max-width: 1000px) {
+  .shelter .shelter-block {
+    margin: 0 20px 0;
+    padding: 50px 0 40px;
+  }
+}
+@media (max-width: 640px) {
+  .shelter .shelter-block {
+    padding: 80px 0 0px;
+  }
+  .shelter .shelter-block .head-text {
+    font-size: 30px;
+  }
+}
+@media (max-width: 440px) {
+  .shelter .shelter-block .help-block .help-card {
+    width: 165px;
+  }
+  .shelter .shelter-block .help-block .help-card__name {
+    margin-bottom: 45px;
+  }
+}/*# sourceMappingURL=ShelterMedia.css.map */

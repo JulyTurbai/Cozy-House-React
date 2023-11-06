@@ -1,0 +1,32 @@
+@media (max-width: 1000px) {
+    .shelter {
+        .shelter-block {
+            margin: 0 20px 0;
+            padding: 50px 0 40px;
+        }
+    }
+}
+@media (max-width: 640px) {
+    .shelter {
+        .shelter-block {
+            padding: 80px 0 0px;
+            .head-text {
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media (max-width: 440px) {
+    .shelter {
+        .shelter-block {
+            .help-block {
+                .help-card {
+                    width: 165px;
+                    &__name {
+                        margin-bottom: 45px;
+                    }
+                }
+            }
+        }
+    }
+}
