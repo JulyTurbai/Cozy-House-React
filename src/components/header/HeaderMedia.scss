@@ -1,0 +1,22 @@
+@media (max-width:1200px) {
+    .header {
+        .header-block {
+            margin: 0 20px 0;
+        }
+    }
+}
+@media (max-width:730px) {
+    .header {
+        padding-top: 20px;
+        .header-block {
+            .menu {
+                &__items {
+                    display: none;
+                }
+                .burger {
+                    display: initial;
+                }
+            }
+        }
+    }
+}

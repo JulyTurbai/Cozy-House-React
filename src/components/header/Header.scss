@@ -1,0 +1,114 @@
+.header {
+    width: 100%;
+    padding-top: 60px;
+    background: url('../../../public/img/main-img.png');
+    background-repeat: no-repeat;
+    .header-block  {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: center;
+        min-height: 50px;
+        .logo {
+            margin-right: 20px;
+            &__name {
+                font-size: 32px;
+                font-family: 'Georgia';
+                color: #f1cdb3;
+                line-height: 42px;
+            }
+            &__descr {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                color: white;
+                font-weight: bold;
+            }
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            .burger {
+                display: flex;
+                flex-direction: column;
+                display: none;
+                position: relative;
+                cursor: pointer;
+                &__line {
+                    width: 30px;
+                    border-bottom: 2px solid #f1cdb3; 
+                    padding-bottom: 5px;
+                }
+                &__line:hover {
+                    color:#725f53;
+                }
+                &__line::before {
+                    content: "";
+                    display: block;
+                    width: 30px;
+                    border-bottom: 2px solid #f1cdb3; 
+                    padding-bottom: 5px;
+                    }
+                &__line::after {
+                    content: "";
+                    display: block;
+                    width: 30px;
+                    border-bottom: 2px solid #f1cdb3; 
+                    padding-bottom: 5px;
+                }
+            }
+            .burger:hover .window-menu {
+                display: block;
+            }
+            .window-menu  {
+                width: 150px;
+                height: 190px;
+                border: 1px solid #f1cdb3;
+                background: #f1cdb3;
+                padding-top: 30px;
+                border-radius: 20px;
+                position: absolute;
+                cursor: pointer;
+                top: 3px;
+                right: 40px;
+                display: none;
+                &__item {
+                    margin-bottom: 20px;
+                    padding-left: 10px;
+                }
+                &__link {
+                    color: #483d36;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+                &__link:hover {
+                    color: #b9947d;
+                }
+            }
+            &__items {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+            }
+            &__item {
+                margin-right: 40px;
+                border-bottom: 2px solid transparent;
+                padding-bottom: 10px;
+            }
+            &__link {
+                color: white;
+            }
+            &__link:hover {
+                border-bottom: 3px solid #f1cdb3;
+                padding-bottom: 5px;
+            }
+            &__item:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}

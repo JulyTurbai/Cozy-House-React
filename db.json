@@ -1,0 +1,92 @@
+{
+    "animals": [
+        {
+            "id":"1", 
+            "name":"Jennifer", 
+            "breed": "Pooch + Labrador", 
+            "img":"img/Jennifer.png",
+            "age":"2 months", 
+            "Inoculations":"none", 
+            "diseases":"none", 
+            "parasites":"none",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh."
+        },
+        {
+            "id":"2", 
+            "name":"Timmy", 
+            "breed": "British Shorthair", 
+            "img":"img/Timmy.png",
+            "age":"4 years", 
+            "Inoculations":"done", 
+            "diseases":"none", 
+            "parasites":"none",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh."
+        },
+        {
+            "id":"3", 
+            "name":"Scarlett", 
+            "breed": "Jack Russell", 
+            "img":"img/Scarlett.png",
+            "age":"4 months", 
+            "Inoculations":"none", 
+            "diseases":"none", 
+            "parasites":"none",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh."
+        },
+        {
+            "id":"4", 
+            "name":"Charly", 
+            "breed": "Pooch", 
+            "img":"img/Charly.png",
+            "age":"5 years", 
+            "Inoculations":"done", 
+            "diseases":"none", 
+            "parasites":"none",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh."
+        },
+        {
+            "id":"5", 
+            "name":"Katrine", 
+            "breed":"British Shorthair", 
+            "img":"img/Katrine.png",
+            "age":"5 years", 
+            "Inoculations":"done", 
+            "diseases":"none", 
+            "parasites":"none",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh."
+        },
+        {
+            "id":"6", 
+            "name":"Sophia", 
+            "breed": "Pooch", 
+            "img":"img/Sophia.png",
+            "age":"2 months", 
+            "Inoculations":"none", 
+            "diseases":"none", 
+            "parasites":"none",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh."
+        },
+        {
+            "id":"7", 
+            "name":"Woody", 
+            "breed": "Golden Retriever", 
+            "img":"img/Woody.png",
+            "age":"2,5 years", 
+            "Inoculations":"done", 
+            "diseases":"none", 
+            "parasites":"none",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh."
+        },
+        {
+            "id":"8", 
+            "name":"Freddie", 
+            "breed": "Cat", 
+            "img":"img/Freddie.png",
+            "age":"6 years", 
+            "Inoculations":"done", 
+            "diseases":"none", 
+            "parasites":"none",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh."
+        }
+    ]
+}
