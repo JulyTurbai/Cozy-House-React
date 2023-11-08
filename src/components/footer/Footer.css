@@ -1,0 +1,104 @@
+.footer {
+  padding: 80px 0;
+  background-image: url("../../../public/img/Empty-Background.png");
+  background-repeat: no-repeat;
+  position: relative;
+}
+.footer .footer-block {
+  display: flex;
+  max-width: 745px;
+}
+.footer .footer-block .info-block {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: center;
+  min-height: 215px;
+}
+.footer .footer-block .info-block .contacts {
+  margin-right: 170px;
+  max-width: 300px;
+  z-index: 1000;
+  height: 215px;
+}
+.footer .footer-block .info-block .contacts__main-text {
+  min-height: 80px;
+  font-family: "Georgia";
+  font-size: 35px;
+  color: white;
+  font-weight: 300;
+  line-height: 45px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+.footer .footer-block .info-block .contacts .contacts-mail {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: center;
+  margin-bottom: 35px;
+}
+.footer .footer-block .info-block .contacts .contacts-mail__img {
+  margin-right: 25px;
+}
+.footer .footer-block .info-block .contacts .contacts-mail__text {
+  font-size: 20px;
+  color: #f8dac5;
+  font-weight: bold;
+}
+.footer .footer-block .info-block .contacts .contacts-phone {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: center;
+}
+.footer .footer-block .info-block .contacts .contacts-phone__img {
+  margin-right: 25px;
+}
+.footer .footer-block .info-block .contacts .contacts-phone__number {
+  font-size: 20px;
+  color: #f8dac5;
+  font-weight: bold;
+}
+.footer .footer-block .info-block .adress {
+  max-width: 300px;
+  height: 215px;
+  z-index: 100;
+}
+.footer .footer-block .info-block .adress__text {
+  min-height: 80px;
+  font-family: "Georgia";
+  font-size: 35px;
+  color: white;
+  font-weight: 300;
+  line-height: 45px;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+}
+.footer .footer-block .info-block .adress .adress-points {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: center;
+  margin-bottom: 18px;
+}
+.footer .footer-block .info-block .adress .adress-points__img {
+  margin-right: 25px;
+}
+.footer .footer-block .info-block .adress .adress-points__coordinate {
+  font-size: 20px;
+  color: #f8dac5;
+  font-weight: bold;
+}
+.footer .footer-block .info-block .adress .adress-points--last {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: center;
+  margin-bottom: 0px;
+}
+.footer .footer-block__img {
+  position: absolute;
+  right: 350px;
+  bottom: 0;
+}/*# sourceMappingURL=Footer.css.map */

@@ -16,6 +16,10 @@
                 font-family: 'Georgia';
                 color: #f1cdb3;
                 line-height: 42px;
+                cursor: pointer;
+                a {
+                   color: #f1cdb3;
+                }
             }
             &__descr {
                 font-family: Arial, Helvetica, sans-serif;

@@ -1,0 +1,53 @@
+.donation {
+    .donation-block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: center;
+        padding: 0 200px 90px 0px;
+        &__img {
+            margin-right: 50px;
+        }
+        .donation-info {
+            max-width: 370px;
+            &__main-text {
+                font-family: "Georgia";
+                font-size: 35px;
+                color: #545454;
+                font-weight: 300;
+                line-height: 45px;
+                letter-spacing: 2px;
+                margin-bottom: 25px;
+            }
+            &__bank-name {
+                font-size: 15px;
+                font-weight: bold;
+                color: #545454;
+                margin-bottom: 15px
+            }
+            .credit-card {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: center;
+                width: 320px;
+                height: 47px;
+                background: #f1cdb3;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                &__img {
+                    margin-right: 15px;
+                }
+                &__number {
+                    font-size: 20px;
+                }
+            } 
+            &__text {
+                font-size: 12px;
+                color: #545454;
+                font-style: italic;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+    }
+}

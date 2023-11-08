@@ -1,0 +1,65 @@
+@media (max-width: 1170px) {
+  .donation .donation-block {
+    margin: 0 20px 0;
+    padding: 0 0px 90px 0px;
+  }
+  .donation .donation-block__img {
+    width: 400px;
+  }
+}
+@media (max-width: 810px) {
+  .donation .donation-block__img {
+    width: 300px;
+  }
+  .donation .donation-block .donation-info__main-text {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 700px) {
+  .donation .donation-block {
+    padding: 0 0px 40px 0px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .donation .donation-block__img {
+    width: 400px;
+    margin-right: 0;
+  }
+  .donation .donation-block .donation-info {
+    max-width: 455px;
+    margin-bottom: 50px;
+  }
+  .donation .donation-block .donation-info__main-text {
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 470px) {
+  .donation .donation-block {
+    padding: 30px 0px 40px 0px;
+  }
+  .donation .donation-block__img {
+    width: 300px;
+  }
+  .donation .donation-block .donation-info {
+    max-width: 455px;
+    margin-bottom: 50px;
+  }
+  .donation .donation-block .donation-info__main-text {
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 340px) {
+  .donation .donation-block {
+    padding: 30px 0px 40px 0px;
+  }
+  .donation .donation-block__img {
+    width: 300px;
+  }
+  .donation .donation-block .donation-info__main-text {
+    letter-spacing: 0;
+  }
+  .donation .donation-block .donation-info .credit-card {
+    width: initial;
+  }
+}/*# sourceMappingURL=DonationMedia.css.map */

@@ -1,26 +1,28 @@
 import React from 'react';
+import './Donation.scss';
+import './DonationMedia.scss'
 
 const Donation = () => {
     return (
-        <div class="donation">
-        <div class="container">
-            <div class="donation-block">
-                <img class="donation-block__img" src="img/Dog-donation.png" alt="Dog"/>
-                <div class="donation-info">
-                    <h3 class="donation-info__main-text">
+        <div className="donation">
+        <div className="container">
+            <div className="donation-block">
+                <img className="donation-block__img" src="img/Dog-donation.png" alt="Dog"/>
+                <div className="donation-info">
+                    <h3 className="donation-info__main-text">
                         In addition, you 
                         can make a donation
                     </h3>
-                    <p class="donation-info__bank-name">
+                    <p className="donation-info__bank-name">
                         Name of the bank / Type of bank account
                     </p>
-                    <div class="credit-card">
-                        <img class="credit-card__img" src="img/icons/credit-card (1).png" alt="card"/>
-                        <p class="credit-card__number">
+                    <div className="credit-card">
+                        <img className="credit-card__img" src="img/icons/credit-card (1).png" alt="card"/>
+                        <p className="credit-card__number">
                             8380 2880 8028 8791 7435
                         </p>
                     </div>
-                    <p class="donation-info__text">
+                    <p className="donation-info__text">
                         Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Maecenas a ipsum at libero sagittis dignissim sed 
                         ac diam. Praesent ultrices maximus tortor et vulputate. Interdum 

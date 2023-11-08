@@ -28,7 +28,7 @@
                 margin-bottom: 40px;
             }
         }
-        .button {
+        .button__text {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -40,9 +40,10 @@
             background-color: #f1cdb3;
             border: #f1cdb3;
             border-radius: 50px;
-            &__text {
-                color: black;
-            }
+            color: black;
+        }
+        .button__text:hover {
+            background-color: #bd9980;
         }
     }
 }

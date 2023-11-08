@@ -1,0 +1,23 @@
+.about-shelter__block {
+  margin: 50px 0;
+}
+.about-shelter__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-shelter__info {
+  margin-left: 50px;
+}
+.about-shelter__title {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Georgia";
+  margin-bottom: 20px;
+}
+.about-shelter__descr {
+  max-width: 500px;
+}
+.about-shelter__descr--two {
+  margin-top: 10px;
+}/*# sourceMappingURL=AboutShelter.css.map */
