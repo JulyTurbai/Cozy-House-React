@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Pets.scss';
+import './PetsMedia.scss';
 
 const url = {
     animals: 'http://localhost:3000/animals'
@@ -26,11 +27,18 @@ const OurPets = () => {
                             {
                                 pets.map(pet => (
                                 <div className="pet-card" key={ pet.id }>
-                                    <img className="pet-card__img" src={ pet.img } alt="pet"/>
-                                    <p className="pet-card__name">{ pet.name }</p>
-                                    <button className="pet-card__button">
-                                        Learn More
-                                    </button>
+                                    <div className="pet-card__img">
+                                        <img src={ pet.img } alt="pet"/>
+                                    </div>
+                                    <ul className="pet-card__items">
+                                        <li className="pet-card__item name">{ pet.name }</li>
+                                        <li className="pet-card__item breed">{ pet.breed }</li>
+                                        <li className="pet-card__item">Age: { pet.age }</li>
+                                        <li className="pet-card__item">Inoculations: { pet.inoculations }</li>
+                                        <li className="pet-card__item">Diseases: { pet.diseases }</li>
+                                        <li className="pet-card__item">Parasites: { pet.parasites }</li>
+                                        <li className="pet-card__item--descr">{ pet.description }</li>
+                                    </ul>
                                 </div>
                                 ))
                             }

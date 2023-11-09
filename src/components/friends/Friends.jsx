@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Friend from '../friend/Friend';
 import './Friends.scss';
 import './FriendsMedia.scss';
+import ModalWindow from '../modal/ModalWindow';
+
 
 const url = {
     animals: 'http://localhost:3000/animals'
@@ -38,6 +40,7 @@ const Friends = () => {
                     </div>
                 </div>
             </div>
+            <ModalWindow />
         </div>
     );
 };

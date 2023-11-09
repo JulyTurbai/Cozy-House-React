@@ -1,0 +1,6 @@
+@media (max-width: 520px) {
+  .pet-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=PetsMedia.css.map */

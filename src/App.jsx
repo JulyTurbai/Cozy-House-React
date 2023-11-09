@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Friends from './components/friends/Friends';
 import AboutShelter from './pages/AboutShelter';
 import OurPets from './pages/OurPets';
+import Shelter from './components/shelter/Shelter';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="friends" element={<Friends/>}/>
         <Route path="aboutshelter" element={<AboutShelter/>}/>
         <Route path="ourpets" element={<OurPets/>}/>
+        <Route path="shelter" element={ <Shelter/> }/>
       </Route>
     </Routes>
   );

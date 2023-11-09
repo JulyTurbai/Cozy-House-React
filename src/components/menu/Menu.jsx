@@ -11,7 +11,7 @@ const Menu = () => {
                     <NavLink className="window-menu__link" to="/aboutshelter">About the shelter</NavLink>
                     </li>
                     <li className="window-menu__item">
-                        <a className="window-menu__link" href="#">Our pets</a>
+                        <NavLink className="window-menu__link" to="/ourpets">Our pets</NavLink>
                     </li>
                     <li className="window-menu__item">
                         <a className="window-menu__link" href="#">To help the shelter</a>
@@ -29,7 +29,7 @@ const Menu = () => {
                     <NavLink className="menu__link" to="/ourpets">Our pets</NavLink>
                 </li>
                 <li className="menu__item">
-                    <a className="menu__link" href="#">To help the shelter</a>
+                    <NavLink className="menu__link" to="/shelter">To help the shelter</NavLink>
                 </li>
                 <li className="menu__item">
                     <a className="menu__link" href="#">Contacts</a>
