@@ -24,8 +24,22 @@
             background: #fafafa;
             border-radius: 8px;
             margin: 5px;
+            &__name {
+                font-size: 20px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: #000000;
+                margin-top: 30px;
+                margin-bottom: 5px;
+                margin-left: 20px;
+            }
+            &__breed {
+                font-size: 14px;
+                margin-bottom: 20px;
+                margin-left: 20px;
+            }
             &__items {
                 margin-left: 20px;
+                list-style: none;
             }
             &__item {
                 margin-bottom: 5px;
@@ -33,20 +47,14 @@
                 &--descr {
                     list-style-type: none;
                     font-size: 13px;
+                    margin-top: 15px;
                 }
             }
-            .name {
-                font-size: 20px;
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                color: #000000;
-                margin-top: 30px;
-                margin-bottom: 5px;
-                list-style-type: none;
-            }
-            .breed {
-                list-style-type: none;
-                margin-bottom: 20px;
-            }
+            &__item::before {
+                content: "•"; 
+                color: #f1cdb3; 
+                margin-right: 0.5em;
+              }
         }
     }
 }

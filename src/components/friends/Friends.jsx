@@ -3,6 +3,7 @@ import Friend from '../friend/Friend';
 import './Friends.scss';
 import './FriendsMedia.scss';
 import ModalWindow from '../modal/ModalWindow';
+import { NavLink } from 'react-router-dom';
 
 
 const url = {
@@ -34,9 +35,9 @@ const Friends = () => {
                         </div>
                     </div> 
                     <div className="button-block">
-                        <button className="button-know">
+                        <NavLink className="button-know" to='/ourpets'>
                             Get to know the rest
-                        </button>
+                        </NavLink>
                     </div>
                 </div>
             </div>

@@ -97,4 +97,7 @@
   cursor: pointer;
   background: #f1cdb3;
   margin-top: 65px;
+}
+.friends .friends-block .button-know:hover {
+  background-color: #bd9980;
 }/*# sourceMappingURL=Friends.css.map */

@@ -23,9 +23,6 @@ const Hero = () => {
                                 Make a friend
                             </NavLink>
                         </div>
-                        {/* <button className="button">
-                            <a className="button__text" href="#">Make a friend</a>
-                        </button> */}
                     </div>
                     <img className="hero-block__img" src="img/Donny.png" alt="pets"/>
                 </div>
