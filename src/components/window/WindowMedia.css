@@ -1,0 +1,7 @@
+@media (max-width: 1100px) {
+  .modal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=WindowMedia.css.map */

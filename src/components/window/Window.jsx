@@ -1,5 +1,6 @@
 import React from 'react';
 import './Window.scss';
+import './WindowMedia.scss';
 
 const Window = ({ img, name, breed, age, inoculations, diseases, parasites, description, closeModal }) => {
     return (
