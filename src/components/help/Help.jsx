@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import HelpCards from '../helpCards/HelpCards';
 
 const url = {
-    cards: `${process.env.PUBLIC_API_URL}/cards`
+    cards: `${process.env.REACT_APP_PUBLIC_API_URL}/cards`
 }
 
 const Help = () => {
