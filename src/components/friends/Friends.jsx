@@ -6,8 +6,12 @@ import ModalWindow from '../modal/ModalWindow';
 import { NavLink } from 'react-router-dom';
 
 
+// const url = {
+//     animals: 'http://localhost:3000/animals'
+// }
+
 const url = {
-    animals: 'http://localhost:3000/animals'
+    animals: `${process.env.PUBLIC_API_URL}/animals`
 }
 
 const Friends = () => {

@@ -3,7 +3,7 @@ import './Pets.scss';
 import './PetsMedia.scss';
 
 const url = {
-    animals: 'http://localhost:3000/animals'
+    animals: `${process.env.PUBLIC_API_URL}/animals`
 }
 
 const OurPets = () => {
