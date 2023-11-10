@@ -11,7 +11,7 @@ import { NavLink } from 'react-router-dom';
 // }
 
 const url = {
-    animals: `${process.env.PUBLIC_API_URL}/animals`
+    animals: `${process.env.REACT_APP_PUBLIC_API_URL}/animals`
 }
 
 const Friends = () => {
