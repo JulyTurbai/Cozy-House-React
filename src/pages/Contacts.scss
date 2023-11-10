@@ -1,0 +1,20 @@
+.contacts-shelter {
+    padding: 80px 0;
+    font-size: 18px;
+    color: rgb(70, 57, 46);
+    &__main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__part-one {
+        margin-bottom: 30px;
+    }
+    &__block {
+        padding: 10px;
+    }
+    &__img img {
+        width: 400px;
+    }
+}
+

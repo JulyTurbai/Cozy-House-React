@@ -5,6 +5,7 @@ import Friends from './components/friends/Friends';
 import AboutShelter from './pages/AboutShelter';
 import OurPets from './pages/OurPets';
 import Shelter from './components/shelter/Shelter';
+import Contacts from './pages/Contacts';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="aboutshelter" element={<AboutShelter/>}/>
         <Route path="ourpets" element={<OurPets/>}/>
         <Route path="shelter" element={ <Shelter/> }/>
+        <Route path="contacts" element={ <Contacts/> }/>
       </Route>
     </Routes>
   );

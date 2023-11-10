@@ -1,0 +1,28 @@
+@media(max-width: 620px) {
+    .contacts-shelter {
+        img {
+            width: 300px;
+        }
+    }
+}
+
+@media(max-width: 510px) {
+    .contacts-shelter {
+        img {
+            width: 200px;
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .contacts-shelter {
+        padding: 50px 0;
+        &__main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        img {
+            margin-top: 20px;
+        }
+    }
+}

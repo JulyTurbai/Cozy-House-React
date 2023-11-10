@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Friend = ({ friend }) => {
-    const { id, name, img  } = friend;
+    const { id, name, img,  } = friend;
     
     const FriendInfo = () => {
         document.querySelector('.descr').classList.remove('none');
