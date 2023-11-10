@@ -1,0 +1,35 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 700px;
+  min-height: 400px;
+  background-color: white;
+  padding: 5px;
+  border: 2px solid #f1cdb3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+.modal__img {
+  margin-right: 20px;
+}
+.modal__item--name {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.modal__item {
+  margin-bottom: 10px;
+}
+.modal__button {
+  width: 150px;
+  padding: 5px;
+  background-color: #f1cdb3;
+  border: none;
+  border-radius: 10px;
+  font-family: "Georgia";
+  cursor: pointer;
+}/*# sourceMappingURL=Window.css.map */

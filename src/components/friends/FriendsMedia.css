@@ -52,10 +52,4 @@
   .friends .friends-block .button-block .button-know {
     width: 220px;
   }
-}
-@media (max-width: 1100px) {
-  .modal {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }/*# sourceMappingURL=FriendsMedia.css.map */
